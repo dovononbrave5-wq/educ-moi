@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educ-moi - Répète ce que je dis</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>EDUC<span>MOI</span></h1>
+            <p>Parlez, l'outil répète votre phrase à voix haute</p>
+        </header>
+
+        <section class="visualizer">
+            <canvas id="orb"></canvas>
+            <div class="status">
+                <span class="status-dot"></span>
+                <p id="statut">En attente</p>
+            </div>
+        </section>
+
+        <section class="controls">
+            <h2>Écho vocal</h2>
+            <p class="description">
+                Parlez, faites une pause : votre phrase est répétée. Utilisez un casque pour éviter l'écho.
+            </p>
+            <div class="buttons">
+                <button id="btn-demarrer" class="btn-start"><span>▶</span> Démarrer</button>
+                <button id="btn-stoper" class="btn-stop"><span>■</span> Arrêter</button>
+            </div>
+        </section>
+
+        <section class="transcription-box">
+            <div class="transcription-header">
+                <h3>Ce que vous dites</h3>
+                <span class="live">LIVE</span>
+            </div>
+            <p id="transcription">Votre phrase apparaîtra ici...</p>
+        </section>
+
+        <section class="transcription-box">
+            <div class="transcription-header">
+                <h3>Ce qui est répété</h3>
+            </div>
+            <p id="repetition">...</p>
+        </section>
+
+        <footer>Powered by Brave</footer>
+    </main>
+
+    <script src="./js/orb.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

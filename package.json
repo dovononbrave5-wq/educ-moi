@@ -1,0 +1,16 @@
+{
+  "name": "educ-moi",
+  "version": "1.0.0",
+  "description": "Repete a voix haute ce que l'utilisateur dit au micro",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "ws": "^8.22.2"
+  }
+}
